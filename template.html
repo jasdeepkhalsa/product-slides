@@ -19,6 +19,7 @@ URL: https://code.google.com/p/io-2012-slides
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" media="all" href="theme/css/default.css">
   <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <link rel="stylesheet" media="all" href="theme/css/main.css">
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
   <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
 </head>
@@ -28,12 +29,12 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide class="logoslide nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo.png"></span>
+      <span><img src="images/logo-full.png"></span>
     </article>
   </slide>
 
   <slide class="title-slide segue nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar"><img src="images/logo.png"></aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
@@ -43,370 +44,303 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
 
   <slide>
+    <aside class="note">
+      <section class="flexbox vcenter">
+        <img src="images/wireframe-example.png">
+      </section>
+    </aside>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+      <h2>Joel Spolsky is Awesome!</h2>
     </hgroup>
     <article>
-      <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
+      <ul class="build big">
+        <li>BS in Computer Science from Yale University</li>
+        <li>Program manager on the Microsoft Excel team, working on improving scripting &amp; macros</li>
+        <li>Developed software for Viacomm, MTV &amp; Juno</li>
+        <li>Founded Fog Creek Software in 2000 which created Trello and other useful apps</li>
+        <li>In 2008, Co-founded Stack Overflow - a Q&amp;A site for programmers - which expanded into StackExchange. He is now the CEO of StackExchange.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section class="flexbox vcenter">
+        <img src="images/wireframe-example.png">
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Let's Learn Some Tech Speak</h2>
+    </hgroup>
+    <article>
+      <ul class="build big">
+        <li>Product</li>
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Specs: Functional &amp; Technical</li>
+        <li>Features</li>
+        <li>Bugs</li>
+        <li>Wireframes</li>
+        <li>QA / Testing</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>The Basic Workflow</h2>
+    </hgroup>
+    <article>
+      <ul class="build big">
+        <li>Listen to End User Needs &amp; Wants</li>
+        <li>Create Functional Specs + Wireframes</li>
+        <li>Design</li>
+        <li>Develop</li>
+        <li>QA / Testing</li>
+        <li>Launch</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Problem: What do users want?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Forget Features! Focus on Activites.</h2>
+      <h3>Activity Based Planning by Mike Conte (Microsoft Excel)</h3>
+    </hgroup>
+    <article>
+      <p>For example,</p>
+      <p>Let's say we want to build a dating website</p>
+      <p>Most likely, what would a user want <strong>to do / achieve</strong>?</p>
+      <ul class="build bigger">
+        <li>Check out other's profiles</li>
+        <li>Filter profiles by some criteria</li>
+        <li>Post their own profile</li>
+        <li>Find out how much this service costs in comparison to other dating sites</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/fifa-google-search.png)">
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>User Activities turn into Features</h2>
+    </hgroup>
+    <article>
+      <p>Continuing the dating website example:</p>
+      <ul class="build bigger">
+        <li>Check out other's profiles - <strong>homepage contains a search bar &amp; a mixture of recently added profiles and/or popular profiles</strong></li>
+        <li>Filter profiles by some criteria - <strong>filter &amp; sorting options after search</strong></li>
+        <li>Post their own profile - <strong>"Post Your Profile" menu option in the top navigation</strong></li>
+        <li>Find out how much this service costs - <strong>"Pricing" menu option in the top navigation that comes up as a popup, saving the user time!</strong></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill fill-all nobackground" style="background-image: url(images/wireframe.jpg);">
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Usability Testing</h2>
+    </hgroup>
+    <article>
+      <p class="big">No need to theorize about how customers may be using a product - <strong>watch them use it</strong>!</p>
+      <p class="big">Observations can be mixed with <strong>Activity Based Planning</strong> by constantly asking users <strong>what were you trying to do?</strong></p>
+    </article>
+  </slide>
+
+  <slide class="no-margin">
+    <hgroup>
+      <h2>Customer Avatar with User Demographics</h2>
+    </hgroup>
+    <article>
+      <h1 class="really-big">Saavy Computer Geek</h1>
+      <p class="no-margin">Martin is a partially obese 21 year old spotty faced kid with legs the size of oak trees. All day he spends his rich parents money to buy playstation games, order in Dominos pizza and buy the latest gadgets just to fill the void of love and attention he never gets from his overly workaholic parents. He can also build mobile apps with his eyes closed.</p>
+      <h1 class="really-big">Old Grumpy Grandpa</h1>
+      <p class="no-margin">Constantine, a retired engineer, is so old he's about to be put in a museum on display, however he has recently bought a smart phone (although still cannot text) but is comfortable in surfing the web even if his computer gets infected with viruses from all the spammy emails he clicks on that he thinks are real, but rarely are</p>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Problem: How to get a coder to actually make this for you?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <h1 class="big">&ldquo;A functional specification describes how a product will work entirely from the user's perspective. It doesn't care how the thing is implemented. It talks about features. It specifies screens, menus, dialogs, and so on.&rdquo;</h1>
+      <p class="top-margin">&mdash; <a href="http://www.joelonsoftware.com/articles/fog0000000035.html">Joel Spoolky</a></p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How to Write a Functional Spec?</h2>
+    </hgroup>
+    <article>
+      <ul class="bigger build">
+        <li>So long as you can write English you can write a functional spec!</li>
+        <li>Write keeping your customer avataars in mind</li>
+        <li>Go page by page, screen by screen and write about everything in DETAIL!</li>
+        <li>Think of all the <strong>what ifs</strong> e.g:
+          <ul class="build">
+            <li>what if the website goes down - what to show?</li>
+            <li>what if there are no matching profiles?</li>
+            <li>what if a customer is gay?</li>
+            <li>what if the user finds no matches, where to take them next?</li>
+            <li>what if somebody wants to post a profile on their daughter/son's behalf?</li>
           </ul>
         </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>How to Create Wireframes?</h2>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
+      <ul class="big build">
+        <li>Good old fashioned paper and pen is GREAT!</li>
+        <li>Later you can use an online diagramming tool if you want to pretty it up!</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
+      <h2>Give Your Spec + Wireframes to a Designer</h2>
     </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
+    <article>
+      <ul class="big build">
+        <li>Now it's time to make things look pretty</li>
+        <li>Hire a <strong>designer/UX designer/front-end coder</strong> to create your webpages which will look how you want them to, but won't actually work</li>
+        <li>Check to make sure they're exactly how you want them!</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Give those Designs to a Developer</h2>
+    </hgroup>
+    <article>
+      <ul class="bigger build">
+        <li>Now it's time to make things actually work! WOOHOO! EXCITING!</li>
+        <li>Hire a <strong>programmer/coder/developer</strong> to turn your specs + designed pages into actually working pages</li>
+        <li>Some programmers also do the design step, saving you from hiring two people</li>
+        <li>Be ready to supply them with anything they need or answer any questions quickly!!!</li>
+        <li>Check up regularly on progress to ensure everything is on track!</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>After a coder has finished your website or feature &mdash; what's next?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Testing, testing, testing!</h2>
+    </hgroup>
+    <article>
+      <ul class="big build">
+        <li>YOU are responsible for QA/testing<li>
+        <li>Go page by page, and test every part of the website is matching the specs you initially wrote</li>
+        <li>Note down any <strong>bugs</strong> in a spreadsheet and get your coder to go through each one and fix it</li>
+        <li>After something is fixed you may have to re-test it!</li>
+        <li>Remember: if you adjust your spec you may need to follow the <u>entire process again</u>!</li>
+        <li><strong>Now you know how difficult it is to build awesome things!</strong></li>
       </ul>
     </article>
   </slide>
 
   <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
-
-  <slide>
     <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Tips in Working with Developers</h2>
     </hgroup>
     <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
-}
-</pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image</h2>
-    </hgroup>
-    <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
-    </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide Styles</h2>
-    </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
-        <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
-        </ul>
-        <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
-        </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
+      <ul class="build fade big">
+        <li>Don't tell them <strong>HOW</strong> to implement, just state <strong>WHAT</strong> you want</li>
+        <li>Make them your friends and co-workers</li>
+        <li>Provide them with solid logical arguments for all your decisions</li>
+        <li>Break work down into as small chunks as possible - coders like the feeling of progress</li>
+        <li>When reporting bugs provide as much information as possible! Developers are not psychic</li>
+      </ul>
     </article>
   </slide>
 
   <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar"><img src="images/logo.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Congrats! You're now ready to launch your website or feature!!!</h2>
     </hgroup>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
+  <slide>
     <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
+      <h2>The Workflow Again...</h2>
+      <h3>You will need to do this for every new feature(s) you create!</h3>
     </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
+    <article>
+      <ul class="big">
+        <li>Listen to End User Needs &amp; Wants (Activities, Avatars, Usability)</li>
+        <li>Create Functional Specs + Wireframes (Detailed, What Ifs)</li>
+        <li>Design</li>
+        <li>Develop</li>
+        <li>QA / Testing</li>
+        <li>Launch</li>
+      </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Iframe</h2>
+      <h2>References</h2>
     </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+      <ul>
+        <li>The Process of Designing a Product - http://www.joelonsoftware.com/uibook/chapters/fog0000000065.html</li>
+        <li>How to be a program manager - http://www.joelonsoftware.com/items/2009/03/09.html</li>
+        <li>Painless Functional Specifications (4 Part Series) - http://www.joelonsoftware.com/articles/fog0000000036.html</li>
+      </ul>
     </article>
   </slide>
 
   <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar right"><img src="images/logo.png"></aside>
     <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
+      <h2>Cheers!</h2>
+      <p>Now go and create some awesome products my little minions!</p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
     </p>
   </slide>
 
-  <slide class="logoslide dark nobackground">
+  <slide class="logoslide nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo_white.png"></span>
+      <span><img src="images/logo-full.png"></span>
     </article>
   </slide>
 
   <slide class="backdrop"></slide>
 
 </slides>
-
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
 
 <!--[if IE]>
   <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
