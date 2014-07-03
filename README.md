@@ -1,4 +1,4 @@
-# How to Design Awesome Websites Slides
+## How to Design Awesome Websites (Slides)
 
 _Note: Original repo by Eric Bidelman: https://code.google.com/p/io-2012-slides/_
 
